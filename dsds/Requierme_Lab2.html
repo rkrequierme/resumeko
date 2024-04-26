@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Resume</title>
+    <style>
+        /* Paste your CSS code here */
+        /* Paste your CSS code here */
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{ 
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    background: #838080; /* Change background to white */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #000; /* Change background to black */
+    margin:50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1); /* Update box shadow color */
+}
+.container .left_Side
+{
+    position: relative;
+    background: #000; /* Change background to black */
+    padding: 40px;
+}
+.profileText
+{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Update border color */
+}
+.profileText .imgBx
+{
+    position:relative;
+    width: 200px;
+    height:200px;
+    border-radius: 50%;
+    overflow:hidden;
+}
+.profileText .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h2
+{
+    color: #fff; /* Change text color to white */
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+/* Add more CSS rules here... */
+.profileText h2 span
+{
+    font-size: 0.8em;
+    font-style: 300;
+}
+.contactInfo
+{
+    padding-top: 40px ;
+}
+.title
+{
+    color: #fff; /* Change text color to white */
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactInfo ul
+{
+    position: relative;
+}
+.contactInfo ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactInfo ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #fff; /* Change icon color to white */
+}
+.contactInfo ul li span
+{
+    color: #fff; /* Change text color to white */
+    font-weight: 300;
+}
+.contactInfo.education li
+{
+    margin-bottom: 15px;
+}
+.contactInfo.education h5
+{
+    color: #fff; /* Change text color to white */
+    font-weight: 500;
+}
+.contactInfo.education h4
+{
+    color: #fff; /* Change text color to white */
+    font-weight: 500;
+}
+.contactInfo.education h4:nth-child(2)
+{
+    color: #fff; /* Change text color to white */
+    font-weight: 300;
+}
+.contactInfo.language .percent
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #fff; /* Change background to white */
+    display: block;
+    margin-top: 5px;
+}
+.contactInfo.language .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #000; /* Change background to black */
+}
+.container .right_Side
+{
+    position: relative;
+    background: #fff; /* Change background to white */
+    padding: 40px;
+}
+.about 
+{
+    margin-bottom: 50px;
+}
+.about:last-child
+{
+    margin-bottom: 0;
+}
+.title2
+{
+    color: #000; /* Change text color to black */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p
+{
+    color: #000; /* Change text color to black */
+}
+.about .box
+{
+    display: flex ;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .year_company
+{
+    min-width: 150px;
+}
+.about .box .year_company h5
+{
+    text-transform: uppercase;
+    color: #000; /* Change text color to black */
+    font-weight: 600;
+}
+.about .box .text h4
+{
+    text-transform: uppercase;
+    color: #000; /* Change text color to black */
+    font-size: 16px;
+}
+.skills .box
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.skills .box h4
+{
+    text-transform: uppercase;
+    color: #000; /* Change text color to black */
+    font-weight: 500;
+}
+.skills .box .percent
+{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #fff; /* Change background to white */
+}
+.skills .box .percent div 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #000; /* Change background to black */
+}
+.interest ul
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.interest ul li 
+{
+    list-style: none;
+    color: #000; /* Change text color to black */
+    font-weight: 500;
+    margin: 10px 0;
+}
+.interest ul li .fa 
+{
+    color: #000; /* Change icon color to black */
+    font-size: 18px;
+    width: 20px;
+}
+
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left_Side">
+            <div class="profileText">
+                <div class="imgBx">
+                    <img src="gradd.png">
+                </div>
+                <h2>Regil Kent Requierme</h2>
+            </div>
+            <div class="contactInfo">
+            <h3 class="title">Contact Info</h3>
+            <ul>
+                <li>
+                    <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                    <span class="text">09762987716</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                    <span class="text">rkrequierme@gmail.com</span>
+                </li>
+                
+                <li>
+                    <span class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                    <span class="text">hello_rgl</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                    <span class="text">Camella Springville</span>
+                </li>
+            </ul>
+        </div>
+        <div class="contactInfo education">
+            <h3 class="title">EDUCATION</h3>
+            <ul>
+                <li>
+                   <h5>2016 - 2021</h5>
+                   <h4> Primary Education</h4>
+                   <h4>St. John Fisher School </h4>
+                </li>
+                <li>
+                    <h5>2021 - 2023</h5>
+                    <h4>Secondary Education</h4>
+                    <h4>University of Perpetual Help</h4>
+                 </li>
+                 <li>
+                    <h5>2023 - Present</h5>
+                    <h4>Information Technology</h4>
+                    <h4>Feu Alabang</h4>
+                 </li>
+            </ul>
+        </div>
+        <div class="contactInfo language">
+            <h3 class="title">LANGUAGES</h3>
+            <ul>
+                <li>
+                    <span class="text">English</span>
+                    <span class="percent"></span>
+                    <div style="width: 90%;"></div>
+                </li>
+                <li>
+                    <span class="text">Tagalog</span>
+                    <span class="percent"></span>
+                    <div style="width: 100%;"></div>
+                </li>
+            </ul>
+    </div>
+    </div>
+  <div class="right_Side">
+  <div class="about">
+    <h2 class="title2">Profile</h2>
+    <p>I am a college student pursuing a Bachelor of Science in Information Technology with a specialization in web and mobile application development. I am passionate about coding and creating innovative designs that make the user experience better. In my free time, I enjoy exploring new technologies and developing my skills.
+  </div>
+  <div class="about">
+    <h2 class="title2">Experience</h2>
+    <div class="box">
+        <div class="year_company">
+<h5>2019 - 2023</h5>
+
+        </div>
+        <div class="text">
+        <h4>Graphic Designer</h4>
+        <p>Creating pictures and layouts by hand or using design
+            tools, conceptualizing visuals based on needs, testing
+            graphics across multiple media </p>
+    </div>
+</div>
+  <div class="box">
+    <div class="year_company">
+<h5>2023 - present</h5>
+
+    </div>
+    <div class="text">
+    <h4>Web Developer</h4>
+    <p>I have gained experience in web development. I am
+        proficient in HTML, CSS, and JavaScript, enabling me
+        to build responsive and user-friendly websites </p>
+</div>
+</div>
+</div>
+<div class="about skills">
+    <h2 class="title2">Professional Skills</h2>
+<div class="box">
+    <h4>Html</h4>
+    <div class="percent">
+    <div style="width:100%;"></div>
+</div>
+</div>
+<div class="box">
+    <h4>CSS</h4>
+    <div class="percent">
+    <div style="width: 90%;"></div>
+</div>
+</div>
+<div class="box">
+    <h4>JAVASCRIPT</h4>
+    <div class="percent">
+    <div style="width: 75%;"></div>
+</div>
+</div>
+<div class="box">
+    <h4>C++</h4>
+    <div class="percent">
+    <div style="width:70%;"></div>
+</div>
+</div>
+</div>
+<div class="About interest">
+    <h2 class="title2">Interest</h2>
+    <ul>
+        
+        <li><i class="fa fa-laptop" aria-hidden="true"></i>Developing</li>
+        <li><i class="fa fa-gamepad" aria-hidden="true"></i>Gaming</li>
+        <li><i class="fa fa-briefcase" aria-hidden="true"></i>Business</li>
+    </ul>
+</div>
+  </div>
+    </div>
+</body>
+</html>
